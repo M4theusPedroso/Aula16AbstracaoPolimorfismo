@@ -18,12 +18,19 @@ public class Main {
 
         //EXERCICIO 2
         ContaBancaria conta1 = new ContaBancaria(54789,500);
-        conta1.depositar(500);
-        conta1.sacar(1500);
-
-        //conta1.consultarSaldo();
+        conta1.depositar(250);
+        conta1.sacar(150);
         conta1.exibirDados();
 
+        System.out.println();
+
+        ContaBancaria conta2 = new ContaBancaria(68478, 250);
+        //conta2.depositar(100);
+        //conta2.sacar(20);
+        //conta2.exibirDados();
+
+        conta1.transferir(conta2, 50);
+        conta2.exibirDados();
 
     }
 }
