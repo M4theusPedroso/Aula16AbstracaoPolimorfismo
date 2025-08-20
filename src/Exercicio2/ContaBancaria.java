@@ -12,13 +12,16 @@ public class ContaBancaria implements OperacoesConta {
 
     @Override
     public void depositar(double valor) {
+        saldoInicial += valor;
 
     }
 
     @Override
     public void sacar(double valor) {
-        if (valor > saldo ) {
+        if (valor > saldoInicial ) {
             System.out.println("Erro: Valor inserido maior que o Saldo.");
+        } else {
+            saldoInicial -= valor;
         }
 
     }
@@ -27,7 +30,10 @@ public class ContaBancaria implements OperacoesConta {
     public double consultarSaldo() {
         return 0;
 
-
+    }
+    public void exibirDados() {
+        System.out.println(numeroConta);
+        System.out.println(saldoInicial);
 
     }
 }

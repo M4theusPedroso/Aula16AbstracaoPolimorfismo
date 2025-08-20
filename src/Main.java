@@ -17,11 +17,13 @@ public class Main {
         //caneta.exibirDetalhes();
 
         //EXERCICIO 2
-        ContaBancaria conta1 = new ContaBancaria(54789,798.46);
+        ContaBancaria conta1 = new ContaBancaria(54789,500);
         conta1.depositar(500);
-        conta1.sacar(250);
+        conta1.sacar(1500);
 
-        conta1.consultarSaldo();
+        //conta1.consultarSaldo();
+        conta1.exibirDados();
+
 
     }
 }
